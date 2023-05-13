@@ -1,0 +1,350 @@
+* {
+  scroll-behavior: smooth;
+}
+
+* body {
+  font-family: "Poppins", sans-serif;
+  background-color: #282a3a;
+}
+
+* body .scroll-to-top {
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 1em;
+  z-index: 99;
+  width: 50px;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  transition: all 0.3s;
+}
+
+* body .scroll-to-top:hover {
+  transform: scale(1.1);
+  background-color: whitesmoke;
+}
+
+* body .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #03c988;
+  gap: 9em;
+  height: 4em;
+  border-radius: 2em;
+}
+
+* body .navbar a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 900;
+  transition: all 0.3s;
+  color: black;
+}
+
+* body .navbar a img {
+  width: 2.5em;
+  height: 2.5em;
+  position: relative;
+  top: 5px;
+}
+
+* body .navbar a:hover {
+  transform: scale(1.1);
+}
+
+/* * body .hero-first {
+  margin-top: 0.5em;
+  border-radius: 2em;
+  height: 88.5vh;
+  background-color: black;
+} */
+
+* body .explore {
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #03c988;
+  gap: 30em;
+  height: 4em;
+  border-radius: 2em;
+}
+
+* body .explore a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 900;
+  transition: all 0.3s;
+  color: black;
+}
+
+* body .explore a:hover {
+  transform: scale(1.1);
+}
+.header {
+  color: white;
+  position: relative;
+  top: -20vh;
+  transition: 0.3s;
+}
+.header:hover {
+  transform: scale(1.1);
+}
+* body .hero-second {
+  border: solid 2px white;
+
+  margin-top: 0.5em;
+  border-radius: 2em;
+  height: 98vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gallery {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 40s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+.gallery span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  display: flex;
+  transform: rotateY(calc(var(--i) * 60deg)) translateZ(400px);
+  transform-style: preserve-3d;
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #0004);
+}
+.gallery span img {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.text {
+  position: absolute;
+  transition: 0.6s;
+  opacity: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  top: 6vh;
+  left: 2vw;
+}
+#lib,
+#can,
+#eval {
+  left: 5.5vw;
+  font-size: 35px;
+}
+#ab {
+  left: 1vw;
+}
+#bl,
+#pl2,
+#pl,
+#zl {
+  left: 3vw;
+}
+.gallery span img {
+  transition: 0.3s;
+}
+.gallery span:hover img {
+  transform: scale(1.1);
+  filter: blur(5px);
+}
+
+.gallery span .text {
+  transition: 0.3s;
+}
+
+.gallery span:hover .text {
+  color: white;
+  font-size: 35px;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+* body .hero-third {
+  border: solid 2px white;
+
+  margin-top: 0.5em;
+  border-radius: 2em;
+  height: 98vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+}
+.gallery2 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate2 40s linear infinite;
+}
+@keyframes rotate2 {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(-360deg);
+  }
+}
+.gallery2 span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  display: flex;
+  transform: rotateY(calc(var(--i) * 50deg)) translateZ(400px);
+  transform-style: preserve-3d;
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #0004);
+}
+.gallery2 span img {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.gallery2 span img {
+  transition: 0.3s;
+}
+.gallery2 span:hover img {
+  transform: scale(1.1);
+  filter: blur(5px);
+}
+.gallery2 span .text {
+  transition: 0.3s;
+}
+
+.gallery2 span:hover .text {
+  color: white;
+  font-size: 35px;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+* body .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #03c988;
+  margin-top: 0.5em;
+  height: 25em;
+  border-radius: 2em;
+  gap: 2em;
+}
+
+* body .footer .upper-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15em;
+}
+
+* body .footer .upper-row .left-upper-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+* body .footer .upper-row .middle-upper-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* body .footer .upper-row .right-upper-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: end;
+}
+
+* body .footer .upper-row .left-upper-row a,
+* body .footer .upper-row .right-upper-row a {
+  text-decoration: none;
+  color: #282a3a;
+  text-decoration: underline;
+}
+
+* body .footer .lower-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+}
+
+* body .footer .lower-row .left-lower-row,
+* body .footer .lower-row .right-lower-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+}
+
+* body .footer .lower-row .left-lower-row img,
+* body .footer .lower-row .right-lower-row img {
+  position: relative;
+  top: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.hero-first {
+  margin-top: 0.5em;
+  border-radius: 2em;
+
+  height: 88.5vh;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-first #upper {
+  height: 88.5vh;
+  border-radius: 2em;
+  left: 30vw;
+  width: 98vw;
+  opacity: 40%;
+}
+.hero-first .text-style {
+  display: inline-block;
+  position: absolute;
+  z-index: 5;
+}
+
+.hero-first .text-style .text1 {
+  animation: fadeIn 2s forwards;
+  font-size: 80px;
+  margin-left: 14vw;
+}
+
+/*# sourceMappingURL=index.css.map */

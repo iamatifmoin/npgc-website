@@ -1,0 +1,213 @@
+* {
+  scroll-behavior: smooth;
+}
+* body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+* body .scroll-to-top {
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 1em;
+  z-index: 99;
+  width: 50px;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  transition: all 0.3s;
+}
+* body .scroll-to-top:hover {
+  transform: scale(1.1);
+  background-color: whitesmoke;
+}
+* body .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #03c988;
+  gap: 9em;
+  height: 4em;
+  border-radius: 2em;
+}
+* body .navbar a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 900;
+  transition: all 0.3s;
+  color: black;
+}
+* body .navbar a img {
+  width: 2.5em;
+  height: 2.5em;
+  position: relative;
+  top: 5px;
+}
+* body .navbar a:hover {
+  transform: scale(1.1);
+}
+* body .hero-first {
+  margin-top: 0.5em;
+  border-radius: 2em;
+  height: 88.5vh;
+  background-color: #00337c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+* body .hero-first h1 {
+  position: relative;
+  bottom: 1em;
+  color: white;
+}
+* body .hero-first .box {
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #002250;
+  flex-direction: column;
+  padding: 150px 20px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 40px;
+  background-color: black;
+  overflow: hidden;
+  z-index: 0;
+}
+* body .hero-first .box::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 140%;
+  background: #03c988;
+  animation: rotate 4s linear infinite;
+  z-index: -1;
+}
+* body .hero-first .box::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background-color: black;
+  z-index: -1;
+  border-radius: 40px;
+}
+* body .hero-first .box form {
+  display: flex;
+  flex-direction: column;
+}
+* body .hero-first .box form .upper {
+  display: flex;
+  flex-direction: row;
+}
+* body .hero-first .box form .upper .left {
+  display: flex;
+  flex-direction: column;
+}
+* body .hero-first .box form .upper .left label {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 2em;
+  margin-right: 2em;
+}
+* body .hero-first .box form .upper .right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7em;
+}
+* body .hero-first .box form .upper .right input {
+  text-decoration: none;
+  outline: none;
+  border-radius: 2em;
+  padding: 1em;
+  padding-right: 8em;
+  border: none;
+  border-bottom: 3px solid #03c988;
+}
+* body .hero-first .box form .lower {
+  position: relative;
+  top: 1em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+* body .hero-first .box form .lower input {
+  text-decoration: none;
+  outline: none;
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid #03c988;
+}
+* body .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #03c988;
+  margin-top: 0.5em;
+  height: 25em;
+  border-radius: 2em;
+  gap: 2em;
+}
+* body .footer .upper-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15em;
+}
+* body .footer .upper-row .left-upper-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+* body .footer .upper-row .middle-upper-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body .footer .upper-row .right-upper-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: end;
+}
+* body .footer .upper-row .left-upper-row a,
+* body .footer .upper-row .right-upper-row a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}
+* body .footer .lower-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+}
+* body .footer .lower-row .left-lower-row,
+* body .footer .lower-row .right-lower-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+}
+* body .footer .lower-row .left-lower-row img,
+* body .footer .lower-row .right-lower-row img {
+  position: relative;
+  top: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=contact.css.map */
